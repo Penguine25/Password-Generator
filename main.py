@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 
-
 def generate():
     errorLabel.config(text=' ')
     errorLabel.update()
@@ -19,7 +18,7 @@ def generate():
     psswd = ''
     count = lngth
     while(count>=1):
-        psswd += chars[random.randint(0, 46)]
+        psswd += chars[random.randint(0, 72)]
         count -= 1
     print(psswd)
     output.config(text=psswd, fg='Black')
@@ -53,4 +52,3 @@ outputFrame.pack(pady=30)
 
 root.geometry('500x500')
 root.mainloop()
-
